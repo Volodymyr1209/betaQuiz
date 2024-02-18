@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".QuizResults">
+
+
+    <ImageView
+        android:id="@+id/quizIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/quiz_izon"
+        />
+    <TextView
+        android:id="@+id/successTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/quizIcon"
+        android:text="Ваш результат"
+        android:textColor="#402F2F"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/correctAnswears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Кількість правильних:0"
+        android:layout_marginStart="132dp"
+        android:layout_marginEnd="1200dp"
+        android:layout_below="@id/successTextView"
+        android:textStyle="bold"
+        android:textColor="#0E6C4E"
+        />
+    <TextView
+        android:id="@+id/incorrectAnswears"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:text="Кількість не правильних:0"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="80dp"
+        android:layout_below="@id/correctAnswears"
+        android:textStyle="bold"
+        android:textColor="#A61A10"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startNewQuizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Почати нову вікторину"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_back_gray20"
+        />
+
+</RelativeLayout>
